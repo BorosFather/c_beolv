@@ -1,0 +1,5 @@
+id;name;salary;city
+1;Agyalá Gyula;230;Budapest
+2;Bak Tass;450;Szeged
+3;Cicam Ica;330;Eger
+4;Heu Réka;270;Miskolc
