@@ -47,6 +47,12 @@ namespace beolv{
                     salary = double.Parse(block[2]),
                     city = block[3]
                   };
+                //lista adas a listahoz
+                emp.Add(newEmp);
+                //be kell zarni a file beolvasast
+                readFile.Close();
+
+                Console.WriteLine("Dolgozok: ", emp);
 
             }
             //EndOfStream beolvasas vege, addig ismetlodik a ciklus ameddig van beolvasando file

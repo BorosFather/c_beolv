@@ -1,0 +1,7 @@
+D:\suli\c#\beolv\beolv\bin\Debug\beolv.exe.config
+D:\suli\c#\beolv\beolv\bin\Debug\beolv.exe
+D:\suli\c#\beolv\beolv\bin\Debug\beolv.pdb
+D:\suli\c#\beolv\beolv\obj\Debug\beolv.csproj.AssemblyReference.cache
+D:\suli\c#\beolv\beolv\obj\Debug\beolv.csproj.CoreCompileInputs.cache
+D:\suli\c#\beolv\beolv\obj\Debug\beolv.exe
+D:\suli\c#\beolv\beolv\obj\Debug\beolv.pdb
