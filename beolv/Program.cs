@@ -1,11 +1,11 @@
 ﻿using System;
+//beolvasashoz az alabbi importott kell hasznalni
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//beolvasashoz az alabbi importott kell hasznalni
-using System.Collections.Generic;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace beolv{
 
@@ -27,7 +27,31 @@ namespace beolv{
             //<mit tartalmaz a lista> utanna mi a neve a listanak
             List<employees> emp = new List<employees>();
             //letrehozunk egy olvasot majd az inicializalas utan megadjuk a file nak a nevet amit be akarunk olvasni
-            StreamReader readFile = new StreamReader("emp");
+            StreamReader readFile = new StreamReader("emp.txt");
+            //elso sor atlepese 
+            readFile.ReadLine();
+
+            //beolvasashoz szukseges ciklus
+            do {
+                //beolvasunk egy sort mar eltarolva
+                string line = readFile.ReadLine();
+                //letrehozunk egy uj tombot, split-el daraboljuk fel a sorokat es meg kell addni hogy mi az elvalaszto ';' (ide nem jo a "")
+                string[] block = line.Split(';');
+
+                //letre hozunk egy dolgozot
+                employees newEmp = new employees{
+                    //itt lesz a feltoltes
+                    //at kell konvertalni a feltoltoltendo adatokat pl. int, double
+                    id = int.Parse(block[0]),
+                    name = block[1],
+                    salary = double.Parse(block[2]),
+                    city = block[3]
+                  };
+
+            }
+            //EndOfStream beolvasas vege, addig ismetlodik a ciklus ameddig van beolvasando file
+            while (!readFile.EndOfStream);
+
 
         }
     }
